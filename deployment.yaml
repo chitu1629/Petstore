@@ -1,6 +1,13 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: chitra-ns
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: chitra-ns
   name: petshop
 spec:
   selector:
@@ -22,6 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: chitra-ns
   name: petshop
 spec:
   type: LoadBalancer
