@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: petshop
-        image: sevenajay/petshop:latest
+        image: 562041613760.dkr.ecr.ap-south-1.amazonaws.com/chitra-petstore:latest
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
